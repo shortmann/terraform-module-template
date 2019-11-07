@@ -1,7 +1,7 @@
 terraform-{{cookiecutter.provider}}-{{cookiecutter.module_name}}
 ================================================================
 
-{{cookiecutter.project_short_description}}
+{{cookiecutter.module_short_description}}
 
 Provider
 --------

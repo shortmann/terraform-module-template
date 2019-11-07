@@ -2,7 +2,7 @@
 	"full_name": "Kai Kahllund",
 	"email": "",
 	"module_name": "app",
-	"project_short_description": "A terraform module which does ...",
+	"module_short_description": "A terraform module which does ...",
 	"provider": "azure", 
 	"version": "0.0.1",
 	"license": "MIT"
