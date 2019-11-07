@@ -4,17 +4,7 @@
 	"module_name": "app",
 	"module_short_description": "A terraform module which does ...",
 	"module_version": "0.1.0",
-	"module_provider": {
-		"azure": {
-			"name": "azurerm",
-			"version": "",
-			"repo": "https://github.com/terraform-providers/terraform-provider-azurerm"
-		},
-		"aws": {
-			"name": "aws",
-			"version": ""
-		}
-	},
+	"module_provider": ["azurerm", "aws", "google"],
 	"terraform_version": "0.12.12",
-	"license": "MIT"
+	"license": ["MIT", "BSD-3", "GNU GPL v3.0", "Apache Software License 2.0"]
 }
