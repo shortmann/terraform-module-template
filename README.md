@@ -24,8 +24,9 @@ Fill in the needed information
 * `email` The email address is also used inside the README
 * `module_name` The name of the module (for instance: vault, kolla or jira)
 * `module_short_description` A short description of your module
-* `provider` Your provider, for example azure or aws
-* `version` The modules version
+* `module_version` The modules version
+* `module_provider` Your provider, for example azure or aws
+* `terraform_version` The minimal terraform version
 * `license` The license model
 
-Start writing you module
+Start writing your module

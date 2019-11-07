@@ -1,4 +1,4 @@
-terraform-{{cookiecutter.provider}}-{{cookiecutter.module_name}}
+terraform-{{cookiecutter.module_provider}}-{{cookiecutter.module_name}}
 ================================================================
 
 {{cookiecutter.module_short_description}}
@@ -6,7 +6,7 @@ terraform-{{cookiecutter.provider}}-{{cookiecutter.module_name}}
 Provider
 --------
 
-This module is written for {{cookiecutter.provider}}
+This module is written for {{cookiecutter.module_provider}}
 
 Layout
 ------
@@ -14,22 +14,32 @@ Layout
 ```sh
 ├── examples
 │   ├── {{cookiecutter.module_name}}-multinode
+│   │   ├── README.md
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── variables.tf
 │   └── {{cookiecutter.module_name}}-singlenode
+│       ├── README.md
+│       ├── main.tf
+│       ├── outputs.tf
+│       └── variables.tf
 ├── modules
-│   ├── install-{{cookiecutter.module_name}}
-│   └── run-{{cookiecutter.module_name}}
+│   └── {{cookiecutter.module_name}}
+│       ├── README.md
+│       ├── main.tf
+│       ├── outputs.tf
+│       └── variables.tf
 └── test
+    ├── {{cookiecutter.module_name}}_multinode_test.go
+    └── {{cookiecutter.module_name}}_singlenode_test.go
 ```
 
 ### examples
 Examples are terraform scripts which execute the modules. They are used by tests.
 
 ### modules
-* install-{{cookiecutter.module_name}}
-    * terraform module which installs {{cookiecutter.module_name}}
-* run-{{cookiecutter.module_name}}
-    * terraform module which configures {{cookiecutter.module_name}}
-
+{{cookiecutter.module_name}}
+  
 ### test
 Go tests for your terraform module
 

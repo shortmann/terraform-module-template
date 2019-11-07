@@ -1,7 +1,7 @@
 {{cookiecutter.module_name}}
 ============================
 
-{{cookiecutter.version}}
+{{cookiecutter.module_version}}
 
 * init
 

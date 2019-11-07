@@ -3,7 +3,8 @@
 	"email": "",
 	"module_name": "app",
 	"module_short_description": "A terraform module which does ...",
-	"provider": "azure", 
-	"version": "0.0.1",
+	"module_version": "0.0.1",
+	"module_provider": "azure",
+	"terraform_version": "0.12.12",
 	"license": "MIT"
 }
