@@ -1,3 +1,6 @@
+![Terraform Version](https://img.shields.io/badge/terraform-{{cookiecutter.terraform_version}}-blue.svg)
+
+
 terraform-{{cookiecutter.module_provider}}-{{cookiecutter.module_name}}
 ================================================================
 
