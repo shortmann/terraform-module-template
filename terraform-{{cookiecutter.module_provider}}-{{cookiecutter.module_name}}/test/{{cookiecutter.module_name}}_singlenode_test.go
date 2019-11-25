@@ -18,15 +18,15 @@ func TestTerraform{{cookiecutter.module_name}}SingleNode(t *testing.T) {
 		TerraformDir: "../examples/{{cookiecutter.module_name}}-singelnode",
 
 		// Variables to pass to our Terraform code using -var options
-		Vars: map[string]interface{}{
-			"example": expectedText,
-		},
+		// Vars: map[string]interface{}{
+		// 	"example": expectedText,
+		// },
 
 		// Variables to pass to our Terraform code using -var-file options
-		VarFiles: []string{"varfile.tfvars"},
+		// VarFiles: []string{"varfile.tfvars"},
 
 		// Disable colors in Terraform commands so its easier to parse stdout/stderr
-		NoColor: true,
+		// NoColor: true,
 	}
 
 	// At the end of the test, run `terraform destroy` to clean up any resources that were created
@@ -36,7 +36,7 @@ func TestTerraform{{cookiecutter.module_name}}SingleNode(t *testing.T) {
 	terraform.InitAndApply(t, terraformOptions)
 
 	// Run `terraform output` to get the values of output variables
-	actualTextExample := terraform.Output(t, terraformOptions, "example")
+	actualTextExample := terraform.Output(t, terraformOptions, "vm_name")
 
 	// Verify we're getting back the outputs we expect
 	assert.Equal(t, expectedText, actualTextExample)
